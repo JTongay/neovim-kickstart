@@ -70,11 +70,6 @@ require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Auto Pair quotes/parens/brackets/etc.
-  {
-    'windwp/nvim-autopairs',
-    event = "InsertEnter",
-    opts = {} -- this is equalent to setup({}) function
-  },
   -- {
   --   'vuki656/package-info.nvim',
   --   dependencies = {
@@ -83,33 +78,14 @@ require('lazy').setup({
   -- },
 
   -- VimBeGood, practing and learning vim control
-  'ThePrimeagen/vim-be-good',
 
   -- Git related plugins
-  'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
-  {
-    -- LSP Configuration & Plugins
-    'neovim/nvim-lspconfig',
-    dependencies = {
-      -- Automatically install LSPs to stdpath for neovim
-      'williamboman/mason.nvim',
-      'williamboman/mason-lspconfig.nvim',
-
-      -- Useful status updates for LSP
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
-
-      -- Additional lua configuration, makes nvim stuff amazing!
-      'folke/neodev.nvim',
-    },
-  },
 
   {
     -- Autocompletion
