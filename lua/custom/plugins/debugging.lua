@@ -36,7 +36,7 @@ return {
         }
       }
 
-      dap.configurations.javascript = {
+      dap.configurations.typescript = {
         {
           type = "pwa-node",
           request = "launch",
@@ -46,7 +46,7 @@ return {
         },
       }
 
-      vim.keymap.set('n', '<leader>bt', dap.toggle_breakpointi, {})
+      vim.keymap.set('n', '<leader>bt', dap.toggle_breakpoint, {})
       vim.keymap.set('n', '<leader>bc', dap.continue, {})
       vim.keymap.set('n', '<leader>bs', dap.step_over, {})
     end
