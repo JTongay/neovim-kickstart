@@ -4,3 +4,6 @@ test.sh
 nvim
 # lol 👇
 .vscode/
+
+spell/
+lazy-lock.json
